@@ -1,0 +1,8 @@
+node_modules
+coverage
+.cache
+.env
+dist
+swagger.json
+src/models/auto
+src/routes/routes.ts

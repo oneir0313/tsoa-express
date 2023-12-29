@@ -1,0 +1,10 @@
+version: "3"
+services:
+  flyway:
+    image: flyway/flyway:7.15.0
+    volumes:
+      - "./conf:/flyway/conf:ro"
+      - "./flywayflow:/flyway/flywayflow:ro"
+    network_mode: "bridge" 
+    extra_hosts: 
+      - "host.docker.internal:host-gateway"
